@@ -22,6 +22,9 @@ public class MainActivity extends ActionBarActivity {
         ArrayList<String> tasks = new ArrayList<>();
         tasks.add("left");
         tasks.add("right");
+
+        // TODO(emily) make sure listview scrolling still works, i.e. when there are more items
+
         taskListAdapter = new TaskListAdapter(this, tasks);
         lvTasks.setAdapter(taskListAdapter);
     }
